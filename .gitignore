@@ -1,6 +1,7 @@
 .classpath
 .project
 .settings/
+.idea/
 .svn
 .settings
 .DS_Store
