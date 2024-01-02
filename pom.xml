@@ -222,6 +222,22 @@
 	        </archive>
 		    </configuration>
 			</plugin>
+                        <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-shade-plugin</artifactId>
+                            <version>3.5.1</version>
+                            <executions>
+                                <execution>
+                                    <phase>package</phase>
+                                    <goals>
+                                        <goal>shade</goal>
+                                    </goals>
+                                    <configuration>
+                                        <createDependencyReducedPom>false</createDependencyReducedPom>
+                                    </configuration>
+                                </execution>
+                            </executions>
+                        </plugin>
 			<plugin>
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>
@@ -484,6 +500,7 @@
 		<dependency>
 			<groupId>org.apache.lucene</groupId>
 			<artifactId>lucene-core</artifactId>
+                        <scope>provided</scope>
 		</dependency>
     <dependency>
       <groupId>org.apache.lucene</groupId>
@@ -501,14 +518,17 @@
 		<dependency>
 			<groupId>org.apache.lucene</groupId>
 			<artifactId>lucene-queryparser</artifactId>
+                        <scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.lucene</groupId>
 			<artifactId>lucene-codecs</artifactId>
+                        <scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.solr</groupId>
 			<artifactId>solr-core</artifactId>
+                        <scope>provided</scope>
 		</dependency>
     <dependency>
       <groupId>org.apache.solr</groupId>
