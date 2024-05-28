@@ -8,14 +8,11 @@ import mtas.analysis.util.MtasParserException;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 
 import java.io.IOException;
 import java.io.Reader;
 
 public class MtasCSVParser extends MtasParser {
-    private static final Log log = LogFactory.getLog(MtasCSVParser.class);
     public MtasCSVParser() {
         super();
     }
