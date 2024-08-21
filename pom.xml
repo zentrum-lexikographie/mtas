@@ -234,6 +234,8 @@
                                     </goals>
                                     <configuration>
                                         <createDependencyReducedPom>false</createDependencyReducedPom>
+                                        <shadedArtifactAttached>true</shadedArtifactAttached>
+                                        <shadedClassifierName>with-deps</shadedClassifierName>
                                     </configuration>
                                 </execution>
                             </executions>
